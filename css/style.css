@@ -284,6 +284,9 @@ h2::after {
   background-image: url(../img/instagram.png);
   background-color: #fce38a;
 }
+.team-img-wrapper {
+  transition: transform 0.2s linear;
+}
 .team-img-wrapper:hover .overlay {
   transition: all 200ms linear;
   box-shadow: 10px 10px 0 0 #95e1d3;
