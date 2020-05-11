@@ -202,3 +202,69 @@ h2::after {
   color: #999999;
   font-family: 'Roboto', sans-serif;
 }
+.overlay {
+  background-image: linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  width: 380px;
+  height: 470px;
+  box-shadow: 10px 10px 0 0 #95e1d3;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+
+  background-clip: padding-box;
+}
+.social-list-item {
+  width: 56px;
+  height: 56px;
+  border: rgb(252, 227, 138);
+  cursor: pointer;
+
+  margin: auto;
+  top: 79px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-list-item:hover {
+  background-color: #95e1d3;
+}
+.social-list {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.card {
+  position: relative;
+}
+.social-list-item-facebook {
+  background-image: url(../img/facebook.png);
+  background-color: #fce38a;
+}
+.social-list-item-twitter {
+  background-image: url(../img/twitter.png);
+  background-color: #fce38a;
+}
+.social-list-item-pinterest {
+  background-image: url(../img/pinterest.png);
+  background-color: #fce38a;
+}
+.social-list-item-instagram {
+  background-image: url(../img/instagram.png);
+  background-color: #fce38a;
+}
+.card:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover .team-list-name {
+  background-color: rgb(26, 188, 156);
+}
