@@ -213,7 +213,7 @@ h2::after {
 .overlay {
   position: absolute;
   width: 100%;
-  height: 470px;
+  height: 100%;
   top: 0;
   left: 0;
   background-clip: padding-box;
@@ -258,8 +258,6 @@ h2::after {
 }
 .card {
   width: 380px;
-  height: 100%;
-
   padding-bottom: 84px;
   position: relative;
 }
@@ -316,13 +314,7 @@ h2::after {
 .copiright-link {
   color: #f38181;
 }
-a {
-  text-decoration: none;
-}
 
-a {
-  background-color: transparent;
-}
 .contact-form {
   display: flex;
 }
@@ -333,6 +325,10 @@ a {
   width: 230px;
   height: 40px;
 }
+.contact-form-input:focus {
+  outline: none;
+}
+
 .contact-form-button {
   width: 150px;
   height: 40px;
