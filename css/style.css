@@ -250,7 +250,6 @@ h2::after {
   text-decoration: none;
   padding: 0;
   display: flex;
-  position: absolute;
   left: 50%;
   top: 50%;
 
